@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}  
+
+body{
+background:#E5F1FF; 
+font-family: 'Poppins', sans-serif;
+}
+
+.container{
+height:500px;  
+width:350px;
+background:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+padding:10px;
+}
+
+.container .app-name{
+height:60px;  
+width:100%;
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+position:absolute;
+top:0;
+left:0;
+background:#00214E;
+padding:15px;
+display:flex;
+align-items:center;
+}
+
+.container .app-name img{
+height:35px;   
+width:35px;
+}
+
+.container .app-name h3{
+font-size:16px;
+color:white;
+margin-left:10px;
+text-transform:capitalize;
+}
+
+.container .all-chats{
+height:375px;   
+position:relative;
+top:60px;
+overflow:hidden;
+overflow-y:scroll;
+padding-bottom:8px;
+transition:all .2s;
+}
+
+.container .all-chats::-webkit-scrollbar{
+display:none;        
+}
+
+.all-chats .sent-ques{
+max-width:90%;
+float:right;
+margin-top:8px;
+}
+
+.container .all-chats .sent{
+padding:10px;   
+background:#E5F1FF; 
+color:black;
+display:flex;
+justify-content:center;
+align-items:center;
+list-style-type:none;
+border-radius:10px;
+}
+
+.container .all-chats .receive{
+max-width:90%;
+float:left;
+margin-top:8px;
+}
+
+.container .all-chats .receive .response{
+padding:10px;   
+background:#00214E;
+color:white;
+list-style-type:none;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+margin-left:30px;
+margin-top:-30px;
+}
+
+.container .all-chats .receive img{
+height:25px;     
+width:25px;
+border-radius:100%;
+}
+
+.container .add-msg-box{
+height:50px; 
+width:100%;
+position:absolute;
+left:0;
+bottom:0;
+display:flex;
+align-items:center;
+border-top:1px solid grey;
+}
+
+.container .add-msg-box input{
+all:unset;  
+height:50px;
+width:230px;
+padding-left:20px;
+}
+
+.container .add-msg-box button{
+all:unset;        
+height:30px;    
+width:30px;
+background:#00214E;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:100%;
+color:white;
+font-size:11px;
+position:absolute;
+right:15px;
+cursor:pointer
+}
+
+.container .all-chats .no-chat-img{
+height:160px;  
+width:160px;
+opacity:0.2;
+position:absolute;
+top:130px;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.container .all-chats .no-chat-txt{
+text-align:center;  
+position:absolute;
+bottom:50px;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:22px;
+color:#00214E;
+color:lightgrey;
+}
